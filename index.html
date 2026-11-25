@@ -121,6 +121,25 @@
   details p, details ul { margin: 0 0 1rem; color: var(--muted); }
   details ul { padding-left: 1.25rem; }
 
+  .policy-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(10rem, 1fr));
+    gap: 0.5rem;
+  }
+  .policy-list a {
+    display: block;
+    padding: 0.625rem 0.875rem;
+    border: 1px solid var(--line);
+    border-radius: 0.5rem;
+    background: var(--surface);
+    color: var(--ink);
+    text-decoration: none;
+  }
+  .policy-list a:hover { border-color: var(--accent); color: var(--accent); }
+
   footer {
     padding-top: 4rem;
     padding-bottom: 3rem;
@@ -171,6 +190,21 @@
       <summary>How do I update the app?</summary>
       <p>Open the App Store, tap your profile picture, and look for Lithuanian Language A1-A2 in the list of available updates. You can also turn on automatic updates in your device settings.</p>
     </details>
+  </section>
+
+  <section id="privacy">
+    <h2>Privacy policy</h2>
+    <p>Choose your language to read the privacy policy.</p>
+    <ul class="policy-list">
+      <li><a href="Privacy_Policy_en-US.txt" lang="en">English</a></li>
+      <li><a href="Privacy_Policy_lt-LT.txt" lang="lt">Lietuvių</a></li>
+      <li><a href="Privacy_Policy_pl-PL.txt" lang="pl">Polski</a></li>
+      <li><a href="Privacy_Policy_uk-UA.txt" lang="uk">Українська</a></li>
+      <li><a href="Privacy_Policy_ru-RU.txt" lang="ru">Русский</a></li>
+      <li><a href="Privacy_Policy_be-BY.txt" lang="be">Беларуская</a></li>
+      <li><a href="Privacy_Policy_ka-GE.txt" lang="ka">ქართული</a></li>
+      <li><a href="Privacy_Policy_tr-TR.txt" lang="tr">Türkçe</a></li>
+    </ul>
   </section>
 </main>
 
