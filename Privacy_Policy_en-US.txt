@@ -1,0 +1,23 @@
+Privacy Policy
+Last updated: 23.11.2026
+
+Overview
+Lithuanian Language A1-A2 respects your privacy. The app does not require an account, has no backend servers, and does not collect, store, or share your personal data.
+
+Analytics and crash reports
+If you choose to share analytics and diagnostics data with app developers in your device settings, Apple may provide us with anonymous, aggregated information, such as app usage statistics and crash reports. This data cannot be used to identify you personally. You can turn this off at any time in Settings > Privacy & Security > Analytics & Improvements.
+
+Subscriptions and payments
+Subscriptions are processed by Apple through the App Store. We do not have access to your payment details or Apple ID. For more information, see Apple's Privacy Policy: https://www.apple.com/legal/privacy/
+
+Data stored on your device
+Your learning progress and settings are stored only on your device. If you delete the app, this data is removed.
+
+Children's privacy
+The app does not knowingly collect any data from children.
+
+Changes to this policy
+We may update this policy from time to time. The latest version will always be available at this page.
+
+Contact
+If you have any questions, contact us at: lithuanianlanguageapp@gmail.com

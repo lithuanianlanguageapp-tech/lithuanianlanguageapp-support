@@ -1,0 +1,23 @@
+Gizlilik Politikası
+Son güncelleme: 23.11.2026
+
+Genel Bakış
+Lithuanian Language A1-A2 gizliliğinize saygı duyar. Uygulama hesap gerektirmez, arka uç (backend) sunucuları yoktur ve kişisel verilerinizi toplamaz, saklamaz veya paylaşmaz.
+
+Analiz ve çökme raporları
+Cihaz ayarlarınızda analiz ve tanılama verilerini uygulama geliştiricileriyle paylaşmayı seçerseniz, Apple bize uygulama kullanım istatistikleri ve çökme raporları gibi anonim, toplu bilgiler sağlayabilir. Bu veriler sizi kişisel olarak tanımlamak için kullanılamaz. Bunu istediğiniz zaman Ayarlar > Gizlilik ve Güvenlik > Analiz ve İyileştirmeler bölümünden kapatabilirsiniz.
+
+Abonelikler ve ödemeler
+Abonelikler, App Store üzerinden Apple tarafından işlenir. Ödeme bilgilerinize veya Apple ID'nize erişimimiz yoktur. Daha fazla bilgi için Apple'ın Gizlilik Politikası'na bakın: https://www.apple.com/legal/privacy/
+
+Cihazınızda saklanan veriler
+Öğrenme ilerlemeniz ve ayarlarınız yalnızca cihazınızda saklanır. Uygulamayı silerseniz bu veriler de kaldırılır.
+
+Çocukların gizliliği
+Uygulama, çocuklardan bilerek herhangi bir veri toplamaz.
+
+Bu politikadaki değişiklikler
+Bu politikayı zaman zaman güncelleyebiliriz. En güncel sürüm her zaman bu sayfada bulunacaktır.
+
+İletişim
+Herhangi bir sorunuz varsa bizimle şu adresten iletişime geçin: lithuanianlanguageapp@gmail.com
