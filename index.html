@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Support – Lithuanian Language A1-A2</title>
+<meta name="description" content="Support for Lithuanian Language A1-A2, a lightweight, minimalist app for learning Lithuanian words at the A1-A2 level.">
+<style>
+  :root {
+    --bg: #f5f7f6;
+    --surface: #ffffff;
+    --ink: #17211c;
+    --muted: #55625b;
+    --line: #d9e0dc;
+    --accent: #006a44;
+    --accent-ink: #ffffff;
+    color-scheme: light;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #101613;
+      --surface: #18201c;
+      --ink: #eef3f0;
+      --muted: #a2b0a8;
+      --line: #2b3731;
+      --accent: #4cc38a;
+      --accent-ink: #08140e;
+      color-scheme: dark;
+    }
+  }
+
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    font-size: 1.0625rem;
+    line-height: 1.6;
+  }
+  main, footer {
+    width: 100%;
+    max-width: 40rem;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+  }
+
+  /* Hero: one word, nothing more */
+  .hero {
+    padding: 5rem 0 3.5rem;
+    border-bottom: 1px solid var(--line);
+  }
+  .word {
+    margin: 0;
+    font-family: Georgia, "Times New Roman", serif;
+    font-weight: 400;
+    font-size: clamp(4rem, 18vw, 7.5rem);
+    line-height: 1;
+    letter-spacing: -0.02em;
+  }
+  .translation {
+    margin: 0.5rem 0 0;
+    color: var(--muted);
+    font-size: 1.125rem;
+  }
+  h1 {
+    margin: 3rem 0 0.5rem;
+    font-size: 1.5rem;
+    line-height: 1.25;
+    font-weight: 600;
+  }
+  .lead { margin: 0; color: var(--muted); max-width: 34rem; }
+
+  section { padding: 3rem 0 0; }
+  h2 {
+    margin: 0 0 0.75rem;
+    font-size: 1.25rem;
+    line-height: 1.3;
+    font-weight: 600;
+  }
+  p { margin: 0 0 1rem; }
+
+  .contact {
+    display: inline-block;
+    margin-top: 0.25rem;
+    padding: 0.75rem 1.25rem;
+    border-radius: 0.5rem;
+    background: var(--accent);
+    color: var(--accent-ink);
+    font-weight: 600;
+    text-decoration: none;
+    overflow-wrap: anywhere;
+  }
+  .contact:hover { filter: brightness(1.08); }
+  a:focus-visible, summary:focus-visible {
+    outline: 3px solid var(--accent);
+    outline-offset: 3px;
+    border-radius: 0.25rem;
+  }
+
+  details { border-bottom: 1px solid var(--line); }
+  details:first-of-type { border-top: 1px solid var(--line); }
+  summary {
+    cursor: pointer;
+    padding: 1rem 0;
+    font-weight: 600;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+  }
+  summary::-webkit-details-marker { display: none; }
+  summary::after {
+    content: "+";
+    color: var(--muted);
+    font-weight: 400;
+    flex-shrink: 0;
+  }
+  details[open] summary::after { content: "–"; }
+  details p, details ul { margin: 0 0 1rem; color: var(--muted); }
+  details ul { padding-left: 1.25rem; }
+
+  footer {
+    padding-top: 4rem;
+    padding-bottom: 3rem;
+    color: var(--muted);
+    font-size: 0.9375rem;
+  }
+</style>
+</head>
+<body>
+<main>
+  <header class="hero">
+    <p class="word" lang="lt">Labas</p>
+    <p class="translation">Hello</p>
+    <h1>Lithuanian Language A1-A2</h1>
+    <p class="lead">A lightweight, minimalist app for learning Lithuanian words at the A1-A2 level. Just you and the words, nothing more. Now you can put any spare moment to good use, anywhere, whether it’s one minute or until your phone runs out of battery.</p>
+  </header>
+
+  <section id="contact">
+    <h2>Contact support</h2>
+    <p>Have a question, found a problem, or want to share an idea? Send us an email and we will reply as soon as we can.</p>
+    <a class="contact" href="mailto:lithuanianlanguageapp@gmail.com?subject=Lithuanian%20Language%20A1-A2%20support">lithuanianlanguageapp@gmail.com</a>
+  </section>
+
+  <section id="faq">
+    <h2>Frequently asked questions</h2>
+
+    <details>
+      <summary>Something is not working. What should I do?</summary>
+      <p>Close the app completely and open it again. If the problem continues, update the app to the latest version in the App Store and restart your device. If it still happens, email us and include:</p>
+      <ul>
+        <li>What you were doing when the problem appeared</li>
+        <li>Your device model and iOS version</li>
+        <li>A screenshot, if possible</li>
+      </ul>
+    </details>
+
+    <details>
+      <summary>I found a mistake in a word or translation.</summary>
+      <p>Thank you for telling us. Email us the word, what is wrong, and what you think is correct. We will check it and fix it in a future update.</p>
+    </details>
+
+    <details>
+      <summary>I have a suggestion for the app.</summary>
+      <p>We would love to hear it. Send your idea to our support email. We read every message, although we cannot promise that every suggestion will be added.</p>
+    </details>
+
+    <details>
+      <summary>How do I update the app?</summary>
+      <p>Open the App Store, tap your profile picture, and look for Lithuanian Language A1-A2 in the list of available updates. You can also turn on automatic updates in your device settings.</p>
+    </details>
+  </section>
+</main>
+
+<footer>
+  <p>&copy; 2026 Lithuanian Language A1-A2. All rights reserved.</p>
+</footer>
+</body>
+</html>
