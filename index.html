@@ -39,16 +39,47 @@
     font-size: 1.0625rem;
     line-height: 1.6;
   }
-  main, footer {
+  main, footer, .topbar {
     width: 100%;
     max-width: 40rem;
     margin: 0 auto;
-    padding: 0 1.5rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
   }
+
+  /* Language selector */
+  .topbar {
+    display: flex;
+    justify-content: flex-end;
+    padding-top: 1.25rem;
+  }
+  .sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+  }
+  #lang {
+    font: inherit;
+    font-size: 1rem;
+    color: var(--ink);
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-radius: 0.5rem;
+    padding: 0.5rem 0.75rem;
+    max-width: 100%;
+    cursor: pointer;
+  }
+  #lang:hover { border-color: var(--accent); }
 
   /* Hero: one word, nothing more */
   .hero {
-    padding: 5rem 0 3.5rem;
+    padding: 3.5rem 0 3.5rem;
     border-bottom: 1px solid var(--line);
   }
   .word {
@@ -93,7 +124,7 @@
     overflow-wrap: anywhere;
   }
   .contact:hover { filter: brightness(1.08); }
-  a:focus-visible, summary:focus-visible {
+  a:focus-visible, summary:focus-visible, #lang:focus-visible {
     outline: 3px solid var(--accent);
     outline-offset: 3px;
     border-radius: 0.25rem;
@@ -149,52 +180,66 @@
 </style>
 </head>
 <body>
+<div class="topbar">
+  <label for="lang" class="sr-only" data-i18n="langLabel">Language</label>
+  <select id="lang" aria-label="Language">
+    <option value="en">English</option>
+    <option value="lt">Lietuvių</option>
+    <option value="pl">Polski</option>
+    <option value="uk">Українська</option>
+    <option value="ru">Русский</option>
+    <option value="be">Беларуская</option>
+    <option value="ka">ქართული</option>
+    <option value="tr">Türkçe</option>
+  </select>
+</div>
+
 <main>
   <header class="hero">
     <p class="word" lang="lt">Labas</p>
-    <p class="translation">Hello</p>
+    <p class="translation" data-i18n="hello">Hello</p>
     <h1>Lithuanian Language A1-A2</h1>
-    <p class="lead">A lightweight, minimalist app for learning Lithuanian words at the A1-A2 level. Just you and the words, nothing more. Now you can put any spare moment to good use, anywhere, whether it’s one minute or until your phone runs out of battery.</p>
+    <p class="lead" data-i18n="lead">A lightweight, minimalist app for learning Lithuanian words at the A1-A2 level. Just you and the words, nothing more. Now you can put any spare moment to good use, anywhere, whether it’s one minute or until your phone runs out of battery.</p>
   </header>
 
   <section id="contact">
-    <h2>Contact support</h2>
-    <p>Have a question, found a problem, or want to share an idea? Send us an email and we will reply as soon as we can.</p>
+    <h2 data-i18n="contactH">Contact support</h2>
+    <p data-i18n="contactP">Have a question, found a problem, or want to share an idea? Send us an email and we will reply as soon as we can.</p>
     <a class="contact" href="mailto:lithuanianlanguageapp@gmail.com?subject=Lithuanian%20Language%20A1-A2%20support">lithuanianlanguageapp@gmail.com</a>
   </section>
 
   <section id="faq">
-    <h2>Frequently asked questions</h2>
+    <h2 data-i18n="faqH">Frequently asked questions</h2>
 
     <details>
-      <summary>Something is not working. What should I do?</summary>
-      <p>Close the app completely and open it again. If the problem continues, update the app to the latest version in the App Store and restart your device. If it still happens, email us and include:</p>
+      <summary data-i18n="q1">Something is not working. What should I do?</summary>
+      <p data-i18n="a1">Close the app completely and open it again. If the problem continues, update the app to the latest version in the App Store and restart your device. If it still happens, email us and include:</p>
       <ul>
-        <li>What you were doing when the problem appeared</li>
-        <li>Your device model and iOS version</li>
-        <li>A screenshot, if possible</li>
+        <li data-i18n="a1l1">What you were doing when the problem appeared</li>
+        <li data-i18n="a1l2">Your device model and iOS version</li>
+        <li data-i18n="a1l3">A screenshot, if possible</li>
       </ul>
     </details>
 
     <details>
-      <summary>I found a mistake in a word or translation.</summary>
-      <p>Thank you for telling us. Email us the word, what is wrong, and what you think is correct. We will check it and fix it in a future update.</p>
+      <summary data-i18n="q2">I found a mistake in a word or translation.</summary>
+      <p data-i18n="a2">Thank you for telling us. Email us the word, what is wrong, and what you think is correct. We will check it and fix it in a future update.</p>
     </details>
 
     <details>
-      <summary>I have a suggestion for the app.</summary>
-      <p>We would love to hear it. Send your idea to our support email. We read every message, although we cannot promise that every suggestion will be added.</p>
+      <summary data-i18n="q3">I have a suggestion for the app.</summary>
+      <p data-i18n="a3">We would love to hear it. Send your idea to our support email. We read every message, although we cannot promise that every suggestion will be added.</p>
     </details>
 
     <details>
-      <summary>How do I update the app?</summary>
-      <p>Open the App Store, tap your profile picture, and look for Lithuanian Language A1-A2 in the list of available updates. You can also turn on automatic updates in your device settings.</p>
+      <summary data-i18n="q4">How do I update the app?</summary>
+      <p data-i18n="a4">Open the App Store, tap your profile picture, and look for Lithuanian Language A1-A2 in the list of available updates. You can also turn on automatic updates in your device settings.</p>
     </details>
   </section>
 
   <section id="privacy">
-    <h2>Privacy policy</h2>
-    <p>Choose your language to read the privacy policy.</p>
+    <h2 data-i18n="privH">Privacy policy</h2>
+    <p data-i18n="privP">Choose your language to read the privacy policy.</p>
     <ul class="policy-list">
       <li><a href="Privacy_Policy_en-US.txt" lang="en">English</a></li>
       <li><a href="Privacy_Policy_lt-LT.txt" lang="lt">Lietuvių</a></li>
@@ -209,7 +254,235 @@
 </main>
 
 <footer>
-  <p>&copy; 2026 Lithuanian Language A1-A2. All rights reserved.</p>
+  <p data-i18n="footer">© 2026 Lithuanian Language A1-A2. All rights reserved.</p>
 </footer>
+
+<script>
+(function () {
+  var T = {
+    en: {
+      title: "Support – Lithuanian Language A1-A2",
+      langLabel: "Language",
+      hello: "Hello",
+      lead: "A lightweight, minimalist app for learning Lithuanian words at the A1-A2 level. Just you and the words, nothing more. Now you can put any spare moment to good use, anywhere, whether it’s one minute or until your phone runs out of battery.",
+      contactH: "Contact support",
+      contactP: "Have a question, found a problem, or want to share an idea? Send us an email and we will reply as soon as we can.",
+      faqH: "Frequently asked questions",
+      q1: "Something is not working. What should I do?",
+      a1: "Close the app completely and open it again. If the problem continues, update the app to the latest version in the App Store and restart your device. If it still happens, email us and include:",
+      a1l1: "What you were doing when the problem appeared",
+      a1l2: "Your device model and iOS version",
+      a1l3: "A screenshot, if possible",
+      q2: "I found a mistake in a word or translation.",
+      a2: "Thank you for telling us. Email us the word, what is wrong, and what you think is correct. We will check it and fix it in a future update.",
+      q3: "I have a suggestion for the app.",
+      a3: "We would love to hear it. Send your idea to our support email. We read every message, although we cannot promise that every suggestion will be added.",
+      q4: "How do I update the app?",
+      a4: "Open the App Store, tap your profile picture, and look for Lithuanian Language A1-A2 in the list of available updates. You can also turn on automatic updates in your device settings.",
+      privH: "Privacy policy",
+      privP: "Choose your language to read the privacy policy.",
+      footer: "© 2026 Lithuanian Language A1-A2. All rights reserved."
+    },
+    lt: {
+      title: "Palaikymas – Lithuanian Language A1-A2",
+      langLabel: "Kalba",
+      hello: "Hello",
+      lead: "Lengva, minimalistinė programėlė lietuvių kalbos žodžiams mokytis A1–A2 lygiu. Tik jūs ir žodžiai, nieko daugiau. Dabar bet kurią laisvą akimirką galite išnaudoti prasmingai, bet kur – nesvarbu, ar tai viena minutė, ar kol išsikraus telefono baterija.",
+      contactH: "Susisiekite su palaikymo komanda",
+      contactP: "Turite klausimą, radote problemą ar norite pasidalyti idėja? Parašykite mums el. paštu ir atsakysime kuo greičiau.",
+      faqH: "Dažniausiai užduodami klausimai",
+      q1: "Kažkas neveikia. Ką daryti?",
+      a1: "Visiškai uždarykite programėlę ir atidarykite ją iš naujo. Jei problema išlieka, atnaujinkite programėlę į naujausią versiją „App Store“ ir iš naujo paleiskite įrenginį. Jei problema vis tiek kartojasi, parašykite mums ir nurodykite:",
+      a1l1: "Ką darėte, kai atsirado problema",
+      a1l2: "Įrenginio modelį ir „iOS“ versiją",
+      a1l3: "Ekrano nuotrauką, jei įmanoma",
+      q2: "Radau klaidą žodyje ar vertime.",
+      a2: "Dėkojame, kad pranešėte. Parašykite mums, koks tai žodis, kas negerai ir kaip, jūsų nuomone, turėtų būti teisingai. Patikrinsime ir ištaisysime tai viename iš būsimų atnaujinimų.",
+      q3: "Turiu pasiūlymą programėlei.",
+      a3: "Mielai jį išgirsime. Atsiųskite savo idėją palaikymo el. paštu. Skaitome kiekvieną žinutę, tačiau negalime pažadėti, kad įgyvendinsime kiekvieną pasiūlymą.",
+      q4: "Kaip atnaujinti programėlę?",
+      a4: "Atidarykite „App Store“, bakstelėkite savo profilio nuotrauką ir sąraše su galimais atnaujinimais suraskite Lithuanian Language A1-A2. Taip pat galite įjungti automatinius atnaujinimus įrenginio nustatymuose.",
+      privH: "Privatumo politika",
+      privP: "Pasirinkite kalbą, kad perskaitytumėte privatumo politiką.",
+      footer: "© 2026 Lithuanian Language A1-A2. Visos teisės saugomos."
+    },
+    pl: {
+      title: "Pomoc techniczna – Lithuanian Language A1-A2",
+      langLabel: "Język",
+      hello: "Cześć",
+      lead: "Lekka, minimalistyczna aplikacja do nauki litewskich słówek na poziomie A1–A2. Tylko Ty i słowa, nic więcej. Teraz każdą wolną chwilę możesz dobrze wykorzystać, gdziekolwiek jesteś – czy to jedna minuta, czy aż do rozładowania baterii w telefonie.",
+      contactH: "Skontaktuj się z pomocą techniczną",
+      contactP: "Masz pytanie, problem z aplikacją lub pomysł, którym chcesz się podzielić? Napisz do nas e-mail, a odpowiemy tak szybko, jak to możliwe.",
+      faqH: "Najczęściej zadawane pytania",
+      q1: "Coś nie działa. Co robić?",
+      a1: "Całkowicie zamknij aplikację i otwórz ją ponownie. Jeśli problem nie znika, zaktualizuj aplikację do najnowszej wersji w App Store i zrestartuj urządzenie. Jeśli problem nadal występuje, napisz do nas i podaj:",
+      a1l1: "Co się działo w chwili wystąpienia problemu",
+      a1l2: "Model urządzenia i wersję iOS",
+      a1l3: "Zrzut ekranu, jeśli to możliwe",
+      q2: "W słowie lub tłumaczeniu jest błąd.",
+      a2: "Dziękujemy za informację. Napisz do nas, jakie to słowo, co jest nie tak i jak, Twoim zdaniem, powinno być poprawnie. Sprawdzimy to i poprawimy w jednej z kolejnych aktualizacji.",
+      q3: "Mam propozycję dotyczącą aplikacji.",
+      a3: "Chętnie ją poznamy. Wyślij swój pomysł na adres e-mail pomocy technicznej. Czytamy każdą wiadomość, ale nie możemy obiecać, że uwzględnimy każdą propozycję.",
+      q4: "Jak zaktualizować aplikację?",
+      a4: "Otwórz App Store, stuknij swoje zdjęcie profilowe i znajdź Lithuanian Language A1-A2 na liście dostępnych aktualizacji. Możesz też włączyć automatyczne aktualizacje w ustawieniach urządzenia.",
+      privH: "Polityka prywatności",
+      privP: "Wybierz język, aby przeczytać politykę prywatności.",
+      footer: "© 2026 Lithuanian Language A1-A2. Wszelkie prawa zastrzeżone."
+    },
+    uk: {
+      title: "Підтримка – Lithuanian Language A1-A2",
+      langLabel: "Мова",
+      hello: "Привіт",
+      lead: "Легкий мінімалістичний застосунок для вивчення литовських слів рівня A1–A2. Тільки ви і слова, нічого зайвого. Тепер будь-яку вільну хвилину можна використати з користю будь-де – хоч одну хвилину, хоч поки не розрядиться батарея телефону.",
+      contactH: "Звернутися до підтримки",
+      contactP: "Маєте запитання, знайшли проблему або хочете поділитися ідеєю? Напишіть нам на електронну пошту, і ми відповімо якнайшвидше.",
+      faqH: "Поширені запитання",
+      q1: "Щось не працює. Що робити?",
+      a1: "Повністю закрийте застосунок і відкрийте його знову. Якщо проблема залишається, оновіть застосунок до останньої версії в App Store і перезавантажте пристрій. Якщо проблема все одно виникає, напишіть нам і вкажіть:",
+      a1l1: "Що ви робили, коли виникла проблема",
+      a1l2: "Модель пристрою та версію iOS",
+      a1l3: "Знімок екрана, якщо можливо",
+      q2: "У слові або перекладі є помилка.",
+      a2: "Дякуємо, що повідомили. Напишіть нам, яке це слово, у чому помилка і як, на вашу думку, правильно. Ми перевіримо та виправимо її в одному з майбутніх оновлень.",
+      q3: "Маю пропозицію щодо застосунку.",
+      a3: "Ми будемо раді її почути. Надішліть свою ідею на адресу підтримки. Ми читаємо кожне повідомлення, але не можемо обіцяти, що додамо кожну пропозицію.",
+      q4: "Як оновити застосунок?",
+      a4: "Відкрийте App Store, торкніться фото профілю та знайдіть Lithuanian Language A1-A2 у списку доступних оновлень. Також можна увімкнути автоматичні оновлення в налаштуваннях пристрою.",
+      privH: "Політика конфіденційності",
+      privP: "Оберіть мову, щоб прочитати політику конфіденційності.",
+      footer: "© 2026 Lithuanian Language A1-A2. Усі права захищено."
+    },
+    ru: {
+      title: "Поддержка – Lithuanian Language A1-A2",
+      langLabel: "Язык",
+      hello: "Привет",
+      lead: "Лёгкое минималистичное приложение для изучения литовских слов уровня A1–A2. Только вы и слова, ничего лишнего. Теперь любую свободную минуту можно использовать с пользой где угодно – хоть одну минуту, хоть пока не сядет батарея телефона.",
+      contactH: "Связаться с поддержкой",
+      contactP: "Есть вопрос, нашли проблему или хотите поделиться идеей? Напишите нам на электронную почту, и мы ответим как можно скорее.",
+      faqH: "Часто задаваемые вопросы",
+      q1: "Что-то не работает. Что делать?",
+      a1: "Полностью закройте приложение и откройте его снова. Если проблема сохраняется, обновите приложение до последней версии в App Store и перезагрузите устройство. Если проблема всё равно возникает, напишите нам и укажите:",
+      a1l1: "Что вы делали, когда возникла проблема",
+      a1l2: "Модель устройства и версию iOS",
+      a1l3: "Скриншот, если возможно",
+      q2: "В слове или переводе есть ошибка.",
+      a2: "Спасибо, что сообщили. Напишите нам, какое это слово, в чём ошибка и как, по вашему мнению, правильно. Мы проверим и исправим её в одном из будущих обновлений.",
+      q3: "У меня есть предложение по приложению.",
+      a3: "Мы будем рады его услышать. Отправьте свою идею на адрес поддержки. Мы читаем каждое сообщение, но не можем обещать, что добавим каждое предложение.",
+      q4: "Как обновить приложение?",
+      a4: "Откройте App Store, нажмите на фото профиля и найдите Lithuanian Language A1-A2 в списке доступных обновлений. Также можно включить автоматические обновления в настройках устройства.",
+      privH: "Политика конфиденциальности",
+      privP: "Выберите язык, чтобы прочитать политику конфиденциальности.",
+      footer: "© 2026 Lithuanian Language A1-A2. Все права защищены."
+    },
+    be: {
+      title: "Падтрымка – Lithuanian Language A1-A2",
+      langLabel: "Мова",
+      hello: "Прывітанне",
+      lead: "Лёгкая мінімалістычная праграма для вывучэння літоўскіх слоў узроўню A1–A2. Толькі вы і словы, нічога лішняга. Цяпер любую вольную хвіліну можна выкарыстаць з карысцю дзе заўгодна – хоць адну хвіліну, хоць пакуль не сядзе батарэя тэлефона.",
+      contactH: "Звязацца з падтрымкай",
+      contactP: "Ёсць пытанне, знайшлі праблему або хочаце падзяліцца ідэяй? Напішыце нам на электронную пошту, і мы адкажам як мага хутчэй.",
+      faqH: "Частыя пытанні",
+      q1: "Нешта не працуе. Што рабіць?",
+      a1: "Цалкам закрыйце праграму і адкрыйце яе зноў. Калі праблема застаецца, абнавіце праграму да апошняй версіі ў App Store і перазагрузіце прыладу. Калі праблема ўсё роўна ўзнікае, напішыце нам і ўкажыце:",
+      a1l1: "Што вы рабілі, калі ўзнікла праблема",
+      a1l2: "Мадэль прылады і версію iOS",
+      a1l3: "Здымак экрана, калі магчыма",
+      q2: "У слове або перакладзе ёсць памылка.",
+      a2: "Дзякуй, што паведамілі. Напішыце нам, якое гэта слова, у чым памылка і як, на вашу думку, правільна. Мы праверым і выправім яе ў адным з будучых абнаўленняў.",
+      q3: "У мяне ёсць прапанова для праграмы.",
+      a3: "Мы будзем рады яе пачуць. Адпраўце сваю ідэю на адрас падтрымкі. Мы чытаем кожнае паведамленне, але не можам абяцаць, што дадамо кожную прапанову.",
+      q4: "Як абнавіць праграму?",
+      a4: "Адкрыйце App Store, націсніце на фота профілю і знайдзіце Lithuanian Language A1-A2 у спісе даступных абнаўленняў. Таксама можна ўключыць аўтаматычныя абнаўленні ў наладах прылады.",
+      privH: "Палітыка прыватнасці",
+      privP: "Выберыце мову, каб прачытаць палітыку прыватнасці.",
+      footer: "© 2026 Lithuanian Language A1-A2. Усе правы абаронены."
+    },
+    ka: {
+      title: "მხარდაჭერა – Lithuanian Language A1-A2",
+      langLabel: "ენა",
+      hello: "გამარჯობა",
+      lead: "მსუბუქი, მინიმალისტური აპლიკაცია ლიტვური სიტყვების შესასწავლად A1–A2 დონეზე. მხოლოდ თქვენ და სიტყვები, სხვა არაფერი. ახლა ნებისმიერ თავისუფალ წუთს შეგიძლიათ სასარგებლოდ გამოიყენოთ, სადაც გინდათ – ერთი წუთით თუ სანამ ტელეფონის ბატარეა არ დაჯდება.",
+      contactH: "დაუკავშირდით მხარდაჭერას",
+      contactP: "გაქვთ შეკითხვა, აღმოაჩინეთ პრობლემა ან გსურთ იდეის გაზიარება? მოგვწერეთ ელფოსტაზე და რაც შეიძლება სწრაფად გიპასუხებთ.",
+      faqH: "ხშირად დასმული კითხვები",
+      q1: "რაღაც არ მუშაობს. რა ვქნა?",
+      a1: "მთლიანად დახურეთ აპლიკაცია და ხელახლა გახსენით. თუ პრობლემა გრძელდება, განაახლეთ აპლიკაცია App Store-ში უახლეს ვერსიამდე და გადატვირთეთ მოწყობილობა. თუ პრობლემა მაინც რჩება, მოგვწერეთ და მიუთითეთ:",
+      a1l1: "რას აკეთებდით, როცა პრობლემა გამოჩნდა",
+      a1l2: "თქვენი მოწყობილობის მოდელი და iOS-ის ვერსია",
+      a1l3: "ეკრანის სურათი, თუ შესაძლებელია",
+      q2: "სიტყვაში ან თარგმანში შეცდომაა.",
+      a2: "გმადლობთ შეტყობინებისთვის. მოგვწერეთ, რომელი სიტყვაა, რა არის არასწორი და თქვენი აზრით, როგორ უნდა იყოს სწორად. შევამოწმებთ და გამოვასწორებთ მომავალ განახლებაში.",
+      q3: "მაქვს შემოთავაზება აპლიკაციასთან დაკავშირებით.",
+      a3: "სიამოვნებით მოვისმენთ. გამოგვიგზავნეთ თქვენი იდეა მხარდაჭერის ელფოსტაზე. ვკითხულობთ ყველა შეტყობინებას, თუმცა ვერ დაგპირდებით, რომ ყველა შემოთავაზებას დავამატებთ.",
+      q4: "როგორ განვაახლო აპლიკაცია?",
+      a4: "გახსენით App Store, შეეხეთ თქვენს პროფილის ფოტოს და ხელმისაწვდომი განახლებების სიაში მოძებნეთ Lithuanian Language A1-A2. ასევე შეგიძლიათ ავტომატური განახლებები ჩართოთ მოწყობილობის პარამეტრებში.",
+      privH: "კონფიდენციალურობის პოლიტიკა",
+      privP: "აირჩიეთ ენა კონფიდენციალურობის პოლიტიკის წასაკითხად.",
+      footer: "© 2026 Lithuanian Language A1-A2. ყველა უფლება დაცულია."
+    },
+    tr: {
+      title: "Destek – Lithuanian Language A1-A2",
+      langLabel: "Dil",
+      hello: "Merhaba",
+      lead: "A1-A2 seviyesinde Litvanca kelimeler öğrenmek için hafif ve minimalist bir uygulama. Sadece siz ve kelimeler, başka hiçbir şey yok. Artık her boş anınızı, nerede olursanız olun, bir dakika da olsa telefonunuzun şarjı bitene kadar da olsa verimli kullanabilirsiniz.",
+      contactH: "Destek ile iletişime geçin",
+      contactP: "Bir sorunuz mu var, bir sorun mu buldunuz ya da bir fikrinizi mi paylaşmak istiyorsunuz? Bize e-posta gönderin, en kısa sürede yanıtlayalım.",
+      faqH: "Sık sorulan sorular",
+      q1: "Bir şey çalışmıyor. Ne yapmalıyım?",
+      a1: "Uygulamayı tamamen kapatıp yeniden açın. Sorun devam ederse uygulamayı App Store’dan en son sürüme güncelleyin ve cihazınızı yeniden başlatın. Sorun yine de oluyorsa bize e-posta gönderin ve şunları belirtin:",
+      a1l1: "Sorun ortaya çıktığında ne yapıyordunuz",
+      a1l2: "Cihaz modeliniz ve iOS sürümünüz",
+      a1l3: "Mümkünse bir ekran görüntüsü",
+      q2: "Bir kelimede veya çeviride hata buldum.",
+      a2: "Bildirdiğiniz için teşekkürler. Bize hangi kelime olduğunu, neyin yanlış olduğunu ve size göre doğrusunun ne olması gerektiğini yazın. Kontrol edip gelecekteki bir güncellemede düzeltelim.",
+      q3: "Uygulama için bir önerim var.",
+      a3: "Duymaktan memnun oluruz. Fikrinizi destek e-posta adresimize gönderin. Her mesajı okuyoruz, ancak her öneriyi ekleyeceğimizi garanti edemeyiz.",
+      q4: "Uygulamayı nasıl güncellerim?",
+      a4: "App Store’u açın, profil fotoğrafınıza dokunun ve mevcut güncellemeler listesinde Lithuanian Language A1-A2’yi bulun. Cihaz ayarlarınızdan otomatik güncellemeleri de açabilirsiniz.",
+      privH: "Gizlilik politikası",
+      privP: "Gizlilik politikasını okumak için dilinizi seçin.",
+      footer: "© 2026 Lithuanian Language A1-A2. Tüm hakları saklıdır."
+    }
+  };
+
+  var select = document.getElementById("lang");
+  var STORAGE_KEY = "support-lang";
+
+  function apply(lang) {
+    var d = T[lang] || T.en;
+    var code = T[lang] ? lang : "en";
+    document.documentElement.lang = code;
+    document.title = d.title;
+    select.value = code;
+    select.setAttribute("aria-label", d.langLabel);
+    var nodes = document.querySelectorAll("[data-i18n]");
+    for (var i = 0; i < nodes.length; i++) {
+      var v = d[nodes[i].getAttribute("data-i18n")];
+      if (v !== undefined) nodes[i].textContent = v;
+    }
+  }
+
+  function initialLang() {
+    try {
+      var saved = localStorage.getItem(STORAGE_KEY);
+      if (saved && T[saved]) return saved;
+    } catch (e) {}
+    var prefs = navigator.languages && navigator.languages.length ? navigator.languages : [navigator.language || "en"];
+    for (var i = 0; i < prefs.length; i++) {
+      var code = String(prefs[i]).toLowerCase().split("-")[0];
+      if (T[code]) return code;
+    }
+    return "en";
+  }
+
+  select.addEventListener("change", function () {
+    apply(select.value);
+    try { localStorage.setItem(STORAGE_KEY, select.value); } catch (e) {}
+  });
+
+  apply(initialLang());
+})();
+</script>
 </body>
 </html>
