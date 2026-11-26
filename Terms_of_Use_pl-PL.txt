@@ -9,11 +9,11 @@ Udzielamy Ci osobistej, niewyłącznej, nieprzenoszalnej, odwołalnej licencji n
 2. Subskrypcje
 
 Lithuanian Language A1-A2 oferuje automatycznie odnawianą subskrypcję „Basic”, która odblokowuje funkcje premium.
-Cena i okres: 1.99 za miesiąc. Ostateczna cena jest wyświetlana w Aplikacji przed zakupem i może się różnić w zależności od kraju.
+Cena i okres: $1.99 za miesiąc. Ostateczna cena jest wyświetlana w Aplikacji przed zakupem i może się różnić w zależności od kraju.
 Płatność: Opłata jest pobierana z Twojego konta Apple ID po potwierdzeniu zakupu.
 Odnawianie: Subskrypcja odnawia się automatycznie, chyba że zostanie anulowana co najmniej 24 godziny przed końcem bieżącego okresu. Opłata za odnowienie jest pobierana w ciągu 24 godzin przed końcem bieżącego okresu.
 Zarządzanie i anulowanie: Subskrypcją możesz zarządzać lub ją anulować w dowolnym momencie w ustawieniach Apple ID: Ustawienia > [Twoje imię i nazwisko] > Subskrypcje. Usunięcie Aplikacji nie anuluje subskrypcji.
-Bezpłatny okres próbny (usuń, jeśli nie jest oferowany): Jeśli oferowany jest bezpłatny okres próbny, niewykorzystana część okresu próbnego przepada po zakupie subskrypcji.
+Bezpłatny okres próbny: Jeśli oferowany jest bezpłatny okres próbny, niewykorzystana część okresu próbnego przepada po zakupie subskrypcji.
 Zwroty: Wszystkie zakupy są obsługiwane przez Apple. Wnioski o zwrot należy składać w Apple: https://reportaproblem.apple.com.
 
 3. Dopuszczalne korzystanie

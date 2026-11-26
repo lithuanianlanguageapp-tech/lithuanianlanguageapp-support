@@ -9,11 +9,11 @@ We grant you a personal, non-exclusive, non-transferable, revocable license to u
 2. Subscriptions
 
 Lithuanian Language A1-A2 offers an auto-renewable subscription, "Basic", which unlocks premium features.
-Price and period: 1.99 per month. The final price is shown in the App before purchase and may vary by country.
+Price and period: $1.99 per month. The final price is shown in the App before purchase and may vary by country.
 Payment: Payment is charged to your Apple ID account at confirmation of purchase.
 Renewal: The subscription renews automatically unless it is cancelled at least 24 hours before the end of the current period. Your account will be charged for renewal within 24 hours before the end of the current period.
 Managing and cancelling: You can manage or cancel your subscription at any time in your Apple ID settings: Settings > [your name] > Subscriptions. Deleting the App does not cancel your subscription.
-Free trial (delete if not offered): If you are offered a free trial, any unused part of the trial period is forfeited when you purchase a subscription.
+Free trial: If you are offered a free trial, any unused part of the trial period is forfeited when you purchase a subscription.
 Refunds: All purchases are handled by Apple. Refund requests must be submitted to Apple at https://reportaproblem.apple.com.
 
 3. Acceptable use

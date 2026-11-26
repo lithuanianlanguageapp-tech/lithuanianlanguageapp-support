@@ -9,11 +9,11 @@ Size, sahip olduğunuz veya kontrol ettiğiniz Apple cihazlarında, bu Koşullar
 2. Abonelikler
 
 Lithuanian Language A1-A2, premium özelliklerin kilidini açan "Basic" adlı otomatik yenilenen bir abonelik sunar.
-Fiyat ve dönem: 1.99 / ay. Nihai fiyat satın almadan önce Uygulamada gösterilir ve ülkeye göre değişebilir.
+Fiyat ve dönem: $1.99 / ay. Nihai fiyat satın almadan önce Uygulamada gösterilir ve ülkeye göre değişebilir.
 Ödeme: Ödeme, satın alma onaylandığında Apple ID hesabınızdan tahsil edilir.
 Yenileme: Abonelik, geçerli dönemin bitiminden en az 24 saat önce iptal edilmediği sürece otomatik olarak yenilenir. Yenileme için hesabınızdan, geçerli dönemin bitiminden önceki 24 saat içinde ücret tahsil edilir.
 Yönetme ve iptal etme: Aboneliğinizi istediğiniz zaman Apple ID ayarlarınızdan yönetebilir veya iptal edebilirsiniz: Ayarlar > [adınız] > Abonelikler. Uygulamayı silmek aboneliğinizi iptal etmez.
-Ücretsiz deneme (sunulmuyorsa silin): Ücretsiz deneme teklif edilirse, bir abonelik satın aldığınızda deneme döneminin kullanılmayan kısmı geçerliliğini yitirir.
+Ücretsiz deneme: Ücretsiz deneme teklif edilirse, bir abonelik satın aldığınızda deneme döneminin kullanılmayan kısmı geçerliliğini yitirir.
 İadeler: Tüm satın alımlar Apple tarafından yürütülür. İade talepleri Apple'a şu adresten iletilmelidir: https://reportaproblem.apple.com.
 
 3. Kabul edilebilir kullanım

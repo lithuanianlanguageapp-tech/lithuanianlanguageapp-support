@@ -9,11 +9,11 @@ Suteikiame jums asmeninę, neišskirtinę, neperleidžiamą, atšaukiamą licenc
 2. Prenumeratos
 
 Lithuanian Language A1-A2 siūlo automatiškai atnaujinamą prenumeratą „Basic“, atrakinančią premium funkcijas.
-Kaina ir laikotarpis: 1.99 už mėnesį. Galutinė kaina rodoma Programėlėje prieš pirkimą ir gali skirtis priklausomai nuo šalies.
+Kaina ir laikotarpis: $1.99 už mėnesį. Galutinė kaina rodoma Programėlėje prieš pirkimą ir gali skirtis priklausomai nuo šalies.
 Apmokėjimas: Mokestis nuskaitomas nuo jūsų „Apple ID“ paskyros patvirtinus pirkimą.
 Atnaujinimas: Prenumerata atnaujinama automatiškai, nebent ji atšaukiama likus ne mažiau kaip 24 valandoms iki dabartinio laikotarpio pabaigos. Mokestis už atnaujinimą nuskaitomas per 24 valandas iki dabartinio laikotarpio pabaigos.
 Valdymas ir atšaukimas: Prenumeratą galite valdyti arba atšaukti bet kada savo „Apple ID“ nustatymuose: Nustatymai > [jūsų vardas] > Prenumeratos. Programėlės ištrynimas prenumeratos neatšaukia.
-Nemokamas bandomasis laikotarpis (ištrinkite, jei nesiūlomas): Jei jums siūlomas nemokamas bandomasis laikotarpis, nepanaudota bandomojo laikotarpio dalis prarandama įsigijus prenumeratą.
+Nemokamas bandomasis laikotarpis: Jei jums siūlomas nemokamas bandomasis laikotarpis, nepanaudota bandomojo laikotarpio dalis prarandama įsigijus prenumeratą.
 Pinigų grąžinimas: Visus pirkimus tvarko „Apple“. Prašymus grąžinti pinigus reikia pateikti „Apple“: https://reportaproblem.apple.com.
 
 3. Leistinas naudojimas
